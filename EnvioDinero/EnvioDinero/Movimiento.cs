@@ -12,5 +12,12 @@ namespace EnvioDinero
         public DateTime Fecha { get; set; }
         public string Descripcion { get; set; }
         public decimal Monto { get; set; }
+        public Movimiento(int iD, DateTime fecha, string descripcion, decimal monto)
+        {
+            ID = iD;
+            Fecha = fecha;
+            Descripcion = descripcion;
+            Monto = monto;
+        }
     }
 }
